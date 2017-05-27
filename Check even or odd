@@ -1,0 +1,14 @@
+/*check even or odd*/
+function checkevenodd(a)
+{
+  if(a%2===0)
+    {
+      console.log("the number "+a+ " is even");
+    }
+  else
+    {
+      console.log("the number "+a+ " is odd");
+    }
+  
+}
+checkevenodd(3);
