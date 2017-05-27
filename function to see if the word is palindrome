@@ -1,0 +1,21 @@
+/*Palindrome checking
+1. Take a string
+2. split,reverse and join
+3.comparison between given string and join string
+*/
+function palindrome(str)
+{
+var sptString=str;
+  console.log(sptString);
+var revString=sptString.split('').reverse().join('');
+  console.log(revString);
+  if(sptString===revString)
+  {
+console.log("This is palyndrome");
+    
+  }
+  else
+  {
+console.log("This is not palyndrome");
+  }
+ }
