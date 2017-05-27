@@ -1,3 +1,9 @@
+/*Reverse String
+1.Take any string
+2.Split string into character as array
+3.Reverse splitted character in array
+4.Join characters into one string
+*/
 function reversed(str)
 {
 var spt=str.split("");
