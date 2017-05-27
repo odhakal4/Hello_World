@@ -1,0 +1,9 @@
+function reversed(str)
+{
+var spt=str.split("");
+console.log(spt);
+var rev=spt.reverse("");
+console.log(rev);
+var joined=rev.join('');
+console.log(joined);
+}
