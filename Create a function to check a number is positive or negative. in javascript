@@ -1,0 +1,13 @@
+/*check positive number or negative*/
+function check_given_number(a)
+{
+  if(a>0)
+    {
+      console.log("This number is +ve");
+    }
+  else
+    {
+      console.log("This number is -ve");
+    }
+}
+check_given_number(5);
