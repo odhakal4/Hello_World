@@ -1,0 +1,19 @@
+/*First Letter Capital in Sentence
+1.Split given sentence into array
+2.Looping the strings until its length
+3.Each looping time first character make upper case using "toUppercase"
+4.Concat "Upper letter" and rest of character.
+*/
+function capitalTheFirstLetter(str)
+{
+    var pieces = str.split(" ");
+    for ( var i = 0; i < pieces.length; i++ )
+    {
+        var j = pieces[i].charAt(0).toUpperCase();
+        pieces[i] = j + pieces[i].substr(1);
+      var finalSentence=pieces.join(' ');
+      console.log(finalSentence);
+    }
+  
+}
+capitalTheFirstLetter();
