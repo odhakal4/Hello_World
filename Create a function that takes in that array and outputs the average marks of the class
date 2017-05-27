@@ -1,0 +1,24 @@
+
+/*1 .In Javascript, Create an array of javascript object where each object has name and marks {name: David, marks : 80} 
+*Student Name    Marks
+*David    80
+*Vinoth    77
+*Divya    88
+*Ishitha    95
+*Thomas    68
+*Create a function that takes in that array and outputs the average marks of the class
+*/
+//Starting Code
+var result = [{name:"David",marks:80},{name:"Vinoth",marks:77},{name:"Divya", marks:88},
+             {name:"Ishitha",marks:95},{name:"Thomas",marks:65}];
+
+// function that takes array and output the average of marks
+function average(r){
+  var total = 0;
+  for(var i=0; i<r.length; i++){
+    total +=r[i].marks;
+  }
+  var avg = total / res.length;
+  return avg;
+}
+console.log(average(result));//Function calling
