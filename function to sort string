@@ -1,0 +1,14 @@
+/*sorting string
+1. Take  a string
+2.Split and sort in array
+3.Join sorted array character
+*/
+function sorting(str)
+{
+var spt=str.split("");
+  console.log(spt);
+  var sorted=spt.sort("");
+  var joinSort=sorted.join('');
+  console.log(joinSort);
+}
+sorting("Nepal");//output=>lapeN
