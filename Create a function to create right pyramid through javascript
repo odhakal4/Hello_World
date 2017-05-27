@@ -1,0 +1,14 @@
+/*Right pyramid*/
+function right_pyramid(x)
+{
+  for(i=0;i<=x;i++)
+    {
+      var r='';
+      for(j=0;j<=i;j++)
+        {
+        r+="*";
+        }
+      console.log(r);
+    }
+}
+right_pyramid(7);
