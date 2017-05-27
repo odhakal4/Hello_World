@@ -1,0 +1,10 @@
+function invertedRightPyramid(a){
+  var store= '';
+  for(var i=a; i>=1; i--){
+    for(var j=1; j<=i; j++){
+      store += "* ";
+    }
+   console.log(pattern);
+   store = "";
+  }
+}
