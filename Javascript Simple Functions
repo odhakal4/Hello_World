@@ -1,0 +1,141 @@
+//function to check even or odd number
+function check(num){
+  if(num%2===0){
+    console.log(num +" the number is even");
+  }
+  else{
+    console.log(num +" the number is odd");
+  }
+}
+check(7); // calling check function
+
+// function to sum arrays of number
+function sum(arr){ 
+  var total=0;
+  for(var i=0; i<arr.length; i++){
+    total+=arr[i];
+  }
+  return total;
+}
+console.log(sum([1,2,3,4])); //calling sum function with array
+
+// function to print a month when user inputs a number
+function printmonth(a) {
+    switch (a) {
+        case 1:
+            month = "January";
+            break;
+        case 2:
+            month = "Febraury";
+            break;
+        case 3:
+            month = "March";
+            break;
+        case 4:
+            month = "April";
+            break;
+        case 5:
+            month = "May";
+            break;
+        case 6:
+            month = "June";
+            break;
+        case 7:
+            month = "July";
+            break;
+        case 8:
+            month = "August";
+            break;
+        case 9:
+            month = "September";
+            break;
+        case 10:
+            month = "October";
+            break;
+        case 11:
+            month = "November";
+            break;
+        case 12:
+            month = "December";
+            break;
+        default:
+            month = "INVALID NUMBER FOR MONTH";
+    }
+    console.log(month);
+}
+printmonth(12); // calling printmonth function with number 12
+printmonth(15); // calling print month function with number 15
+
+// function to check a positive or negative number
+function checknumber(a) {
+    if (typeof a === 'number') {
+        if (a > 0) {
+            console.log("Number is positive " + a);
+        }
+        else {
+            console.log("Number is negative " + a);
+
+        }
+    }
+    else {
+        console.log("not a valid number");
+    }
+}
+checknumber(5);// call checknumber function with number 5
+checknumber("a");// call checknumber function with string a
+
+//function to create multiplication of the given number\
+function multiplicationtable(a){  
+  if(a>0){
+      for (var i=1; i<=10; i++){
+        console.log(a +" * "+i+" = " + a*i);
+      }   
+  }
+  else {
+    console.log("Multiplication number is 0");
+  }
+}
+multiplicationtable(7); // call multiplicationtable function
+
+//function to create right pyramid of * using given height
+function createRightPyramid(a){
+  if (typeof a === 'number'){
+    var pyramid ='';
+    for(var i=1; i<=a; i++){
+      for(var j=1; j<=i; j++){
+       pyramid+="* " ;
+      }
+      console.log(pyramid);
+      pyramid = '';
+    }
+  }
+  
+  else {
+    console.log("not a valid height Please enter the number");
+  }
+}
+createRightPyramid(5);// call createRightPyramid function with its height
+
+//function to create left pyramid of * using given height
+function createLeftPyramid(a){
+    if(typeof a === 'number'){
+      var pyramid ='';
+      for(var i=a; i>=1; i--){
+        for(var j=1; j<=a; j++ ){
+          if(j>=i){
+            pyramid +="* ";
+          }
+          else{
+            pyramid +="  ";
+          }
+        }
+        console.log(pyramid);
+        pyramid ='';
+        
+      }
+    }
+   else {
+     console.log("not a valid height Please enter the number");
+   }
+}
+createLeftPyramid(5);// call createLeftPyramid function
